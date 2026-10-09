@@ -1,0 +1,54 @@
+[
+  {
+    "config": "TF-IDF@3",
+    "cases": 120,
+    "overall": 57.18,
+    "recall": 0.5333,
+    "precision": 0.4389,
+    "mrr": 0.5125,
+    "ndcg": 0.5206,
+    "faithfulness": 0.4933,
+    "hallucination": 0.5067,
+    "claim_support": 1.0,
+    "latency_ms": 0.4421
+  },
+  {
+    "config": "TF-IDF@5",
+    "cases": 120,
+    "overall": 53.87,
+    "recall": 0.5417,
+    "precision": 0.365,
+    "mrr": 0.5146,
+    "ndcg": 0.5208,
+    "faithfulness": 0.3878,
+    "hallucination": 0.6122,
+    "claim_support": 1.0,
+    "latency_ms": 0.4524
+  },
+  {
+    "config": "Hybrid@3",
+    "cases": 120,
+    "overall": 57.94,
+    "recall": 0.5333,
+    "precision": 0.4389,
+    "mrr": 0.5125,
+    "ndcg": 0.52,
+    "faithfulness": 0.504,
+    "hallucination": 0.496,
+    "claim_support": 1.0,
+    "latency_ms": 1.1597
+  },
+  {
+    "config": "Hybrid@5",
+    "cases": 120,
+    "overall": 53.89,
+    "recall": 0.5417,
+    "precision": 0.3433,
+    "mrr": 0.5146,
+    "ndcg": 0.52,
+    "faithfulness": 0.3776,
+    "hallucination": 0.6224,
+    "claim_support": 1.0,
+    "latency_ms": 1.2383
+  }
+]

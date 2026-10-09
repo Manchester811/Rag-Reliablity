@@ -1,0 +1,276 @@
+{
+  "experiment_id": 1,
+  "cases": 8,
+  "average_score": 80.71,
+  "average_latency_ms": 0.42,
+  "results": [
+    {
+      "retrieval_recall": 1.0,
+      "precision_at_k": 0.6667,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "faithfulness_proxy": 0.4074,
+      "answer_relevance_proxy": 1.0,
+      "citation_accuracy_proxy": 1.0,
+      "hallucination_rate_proxy": 0.5926,
+      "overall": 81.45,
+      "llm_judge_score": 0.7037,
+      "llm_judge_provider": "lexical-proxy",
+      "claim_support_rate": 1.0,
+      "claims": [
+        {
+          "claim": "Apple reported total revenue of 391 billion dollars in fiscal 2024.",
+          "status": "supported",
+          "evidence": [
+            {
+              "chunk_id": "c1",
+              "source": "annual-report-2024",
+              "support": 1.0,
+              "retrieval_score": 0.7661
+            },
+            {
+              "chunk_id": "c2",
+              "source": "annual-report-2023",
+              "support": 0.8182,
+              "retrieval_score": 0.2715
+            }
+          ]
+        }
+      ],
+      "latency_ms": 0.58
+    },
+    {
+      "retrieval_recall": 1.0,
+      "precision_at_k": 0.3333,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "faithfulness_proxy": 0.3824,
+      "answer_relevance_proxy": 1.0,
+      "citation_accuracy_proxy": 1.0,
+      "hallucination_rate_proxy": 0.6176,
+      "overall": 77.79,
+      "llm_judge_score": 0.6912,
+      "llm_judge_provider": "lexical-proxy",
+      "claim_support_rate": 1.0,
+      "claims": [
+        {
+          "claim": "The company was founded by Steve Jobs, Steve Wozniak and Ronald Wayne in 1976.",
+          "status": "supported",
+          "evidence": [
+            {
+              "chunk_id": "c5",
+              "source": "history",
+              "support": 0.8667,
+              "retrieval_score": 0.3176
+            }
+          ]
+        }
+      ],
+      "latency_ms": 0.47
+    },
+    {
+      "retrieval_recall": 1.0,
+      "precision_at_k": 0.6667,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "faithfulness_proxy": 0.3448,
+      "answer_relevance_proxy": 1.0,
+      "citation_accuracy_proxy": 1.0,
+      "hallucination_rate_proxy": 0.6552,
+      "overall": 79.8,
+      "llm_judge_score": 0.6724,
+      "llm_judge_provider": "lexical-proxy",
+      "claim_support_rate": 1.0,
+      "claims": [
+        {
+          "claim": "Services revenue includes the App Store, cloud services, subscriptions and advertising.",
+          "status": "supported",
+          "evidence": [
+            {
+              "chunk_id": "c4",
+              "source": "services-report",
+              "support": 0.9091,
+              "retrieval_score": 0.6541
+            }
+          ]
+        }
+      ],
+      "latency_ms": 0.4
+    },
+    {
+      "retrieval_recall": 1.0,
+      "precision_at_k": 0.6667,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "faithfulness_proxy": 0.4074,
+      "answer_relevance_proxy": 1.0,
+      "citation_accuracy_proxy": 1.0,
+      "hallucination_rate_proxy": 0.5926,
+      "overall": 81.45,
+      "llm_judge_score": 0.7037,
+      "llm_judge_provider": "lexical-proxy",
+      "claim_support_rate": 1.0,
+      "claims": [
+        {
+          "claim": "Apple reported total revenue of 383 billion dollars in fiscal 2023.",
+          "status": "supported",
+          "evidence": [
+            {
+              "chunk_id": "c2",
+              "source": "annual-report-2023",
+              "support": 1.0,
+              "retrieval_score": 0.7661
+            },
+            {
+              "chunk_id": "c1",
+              "source": "annual-report-2024",
+              "support": 0.8182,
+              "retrieval_score": 0.2715
+            }
+          ]
+        }
+      ],
+      "latency_ms": 0.43
+    },
+    {
+      "retrieval_recall": 1.0,
+      "precision_at_k": 0.6667,
+      "mrr": 1.0,
+      "ndcg": 0.9197,
+      "faithfulness_proxy": 0.4074,
+      "answer_relevance_proxy": 1.0,
+      "citation_accuracy_proxy": 1.0,
+      "hallucination_rate_proxy": 0.5926,
+      "overall": 80.84,
+      "llm_judge_score": 0.7037,
+      "llm_judge_provider": "lexical-proxy",
+      "claim_support_rate": 1.0,
+      "claims": [
+        {
+          "claim": "Apple reported total revenue of 391 billion dollars in fiscal 2024.",
+          "status": "supported",
+          "evidence": [
+            {
+              "chunk_id": "c1",
+              "source": "annual-report-2024",
+              "support": 1.0,
+              "retrieval_score": 0.5972
+            },
+            {
+              "chunk_id": "c2",
+              "source": "annual-report-2023",
+              "support": 0.8182,
+              "retrieval_score": 0.2117
+            }
+          ]
+        }
+      ],
+      "latency_ms": 0.4
+    },
+    {
+      "retrieval_recall": 1.0,
+      "precision_at_k": 0.6667,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "faithfulness_proxy": 0.4074,
+      "answer_relevance_proxy": 1.0,
+      "citation_accuracy_proxy": 1.0,
+      "hallucination_rate_proxy": 0.5926,
+      "overall": 81.45,
+      "llm_judge_score": 0.7037,
+      "llm_judge_provider": "lexical-proxy",
+      "claim_support_rate": 1.0,
+      "claims": [
+        {
+          "claim": "Apple reported total revenue of 391 billion dollars in fiscal 2024.",
+          "status": "supported",
+          "evidence": [
+            {
+              "chunk_id": "c1",
+              "source": "annual-report-2024",
+              "support": 1.0,
+              "retrieval_score": 0.7661
+            },
+            {
+              "chunk_id": "c2",
+              "source": "annual-report-2023",
+              "support": 0.8182,
+              "retrieval_score": 0.2715
+            }
+          ]
+        }
+      ],
+      "latency_ms": 0.38
+    },
+    {
+      "retrieval_recall": 1.0,
+      "precision_at_k": 0.6667,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "faithfulness_proxy": 0.4074,
+      "answer_relevance_proxy": 1.0,
+      "citation_accuracy_proxy": 1.0,
+      "hallucination_rate_proxy": 0.5926,
+      "overall": 81.45,
+      "llm_judge_score": 0.7037,
+      "llm_judge_provider": "lexical-proxy",
+      "claim_support_rate": 1.0,
+      "claims": [
+        {
+          "claim": "Apple reported total revenue of 391 billion dollars in fiscal 2024.",
+          "status": "supported",
+          "evidence": [
+            {
+              "chunk_id": "c1",
+              "source": "annual-report-2024",
+              "support": 1.0,
+              "retrieval_score": 0.7661
+            },
+            {
+              "chunk_id": "c2",
+              "source": "annual-report-2023",
+              "support": 0.8182,
+              "retrieval_score": 0.2715
+            }
+          ]
+        }
+      ],
+      "latency_ms": 0.36
+    },
+    {
+      "retrieval_recall": 1.0,
+      "precision_at_k": 0.6667,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "faithfulness_proxy": 0.4074,
+      "answer_relevance_proxy": 1.0,
+      "citation_accuracy_proxy": 1.0,
+      "hallucination_rate_proxy": 0.5926,
+      "overall": 81.45,
+      "llm_judge_score": 0.7037,
+      "llm_judge_provider": "lexical-proxy",
+      "claim_support_rate": 1.0,
+      "claims": [
+        {
+          "claim": "Apple reported total revenue of 391 billion dollars in fiscal 2024.",
+          "status": "supported",
+          "evidence": [
+            {
+              "chunk_id": "c1",
+              "source": "annual-report-2024",
+              "support": 1.0,
+              "retrieval_score": 0.7661
+            },
+            {
+              "chunk_id": "c2",
+              "source": "annual-report-2023",
+              "support": 0.8182,
+              "retrieval_score": 0.2715
+            }
+          ]
+        }
+      ],
+      "latency_ms": 0.35
+    }
+  ]
+}

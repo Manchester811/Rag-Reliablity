@@ -1,0 +1,18 @@
+# Optional dense retrieval
+sentence-transformers>=3.0,<6
+
+# Optional OpenAI generation/judging
+openai>=1.50,<3
+
+# Optional PDF/CSV ingestion
+pypdf>=5,<7
+pandas>=2,<3
+
+# Multimodal ingestion
+pytesseract>=0.3.10
+pillow>=10
+pdf2image>=1.16
+camelot-py>=0.11
+pdfplumber>=0.11
+
+# Cross-encoder reranking is provided by sentence-transformers

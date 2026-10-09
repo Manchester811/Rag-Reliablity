@@ -1,0 +1,122 @@
+[
+  {
+    "config": "TF-IDF@3",
+    "attack": "normal",
+    "score": 57.86
+  },
+  {
+    "config": "TF-IDF@3",
+    "attack": "paraphrase",
+    "score": 57.86
+  },
+  {
+    "config": "TF-IDF@3",
+    "attack": "typo",
+    "score": 55.2
+  },
+  {
+    "config": "TF-IDF@3",
+    "attack": "distractor",
+    "score": 57.86
+  },
+  {
+    "config": "TF-IDF@3",
+    "attack": "contradiction",
+    "score": 57.86
+  },
+  {
+    "config": "TF-IDF@3",
+    "attack": "temporal",
+    "score": 56.4
+  },
+  {
+    "config": "TF-IDF@5",
+    "attack": "normal",
+    "score": 54.82
+  },
+  {
+    "config": "TF-IDF@5",
+    "attack": "paraphrase",
+    "score": 54.82
+  },
+  {
+    "config": "TF-IDF@5",
+    "attack": "typo",
+    "score": 51.12
+  },
+  {
+    "config": "TF-IDF@5",
+    "attack": "distractor",
+    "score": 54.82
+  },
+  {
+    "config": "TF-IDF@5",
+    "attack": "contradiction",
+    "score": 54.82
+  },
+  {
+    "config": "TF-IDF@5",
+    "attack": "temporal",
+    "score": 52.82
+  },
+  {
+    "config": "Hybrid@3",
+    "attack": "normal",
+    "score": 58.74
+  },
+  {
+    "config": "Hybrid@3",
+    "attack": "paraphrase",
+    "score": 58.74
+  },
+  {
+    "config": "Hybrid@3",
+    "attack": "typo",
+    "score": 55.74
+  },
+  {
+    "config": "Hybrid@3",
+    "attack": "distractor",
+    "score": 58.74
+  },
+  {
+    "config": "Hybrid@3",
+    "attack": "contradiction",
+    "score": 58.37
+  },
+  {
+    "config": "Hybrid@3",
+    "attack": "temporal",
+    "score": 57.32
+  },
+  {
+    "config": "Hybrid@5",
+    "attack": "normal",
+    "score": 54.88
+  },
+  {
+    "config": "Hybrid@5",
+    "attack": "paraphrase",
+    "score": 55.25
+  },
+  {
+    "config": "Hybrid@5",
+    "attack": "typo",
+    "score": 51.33
+  },
+  {
+    "config": "Hybrid@5",
+    "attack": "distractor",
+    "score": 54.88
+  },
+  {
+    "config": "Hybrid@5",
+    "attack": "contradiction",
+    "score": 53.53
+  },
+  {
+    "config": "Hybrid@5",
+    "attack": "temporal",
+    "score": 53.47
+  }
+]

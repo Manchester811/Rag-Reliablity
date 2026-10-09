@@ -1,0 +1,59 @@
+{
+  "benchmark_cases_per_config": 120,
+  "configurations_tested": 4,
+  "total_evaluations": 480,
+  "ranking": [
+    {
+      "config": "Hybrid@3",
+      "cases": 120,
+      "overall": 57.9423,
+      "recall": 0.5333,
+      "precision": 0.4389,
+      "faithfulness": 0.504,
+      "hallucination": 0.496,
+      "latency_ms": 5.1945
+    },
+    {
+      "config": "TF-IDF@3",
+      "cases": 120,
+      "overall": 57.1761,
+      "recall": 0.5333,
+      "precision": 0.4389,
+      "faithfulness": 0.4933,
+      "hallucination": 0.5067,
+      "latency_ms": 2.1985
+    },
+    {
+      "config": "Hybrid@5",
+      "cases": 120,
+      "overall": 53.8903,
+      "recall": 0.5417,
+      "precision": 0.3433,
+      "faithfulness": 0.3776,
+      "hallucination": 0.6224,
+      "latency_ms": 5.4302
+    },
+    {
+      "config": "TF-IDF@5",
+      "cases": 120,
+      "overall": 53.8717,
+      "recall": 0.5417,
+      "precision": 0.365,
+      "faithfulness": 0.3878,
+      "hallucination": 0.6122,
+      "latency_ms": 2.1703
+    }
+  ],
+  "winner": {
+    "config": "Hybrid@3",
+    "cases": 120,
+    "overall": 57.9423,
+    "recall": 0.5333,
+    "precision": 0.4389,
+    "faithfulness": 0.504,
+    "hallucination": 0.496,
+    "latency_ms": 5.1945
+  },
+  "selection_rule": "highest aggregate benchmark overall score",
+  "warning": "Winner is benchmark-specific; it is not a universal RAG optimum."
+}
