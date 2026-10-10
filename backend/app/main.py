@@ -16,7 +16,10 @@ class RepairExperimentRequest(BaseModel):
     candidate_score: float
     candidate_name: str
     notes: str = ""
-init_db()
+try:
+    init_db()
+except Exception:
+    pass
 app=FastAPI(title="RAG Reliability Lab",version="1.0.0")
 allowed_origins = ["http://localhost:3000","http://localhost:3001","http://127.0.0.1:3000"]
 if os.getenv("NGROK_URL"):
