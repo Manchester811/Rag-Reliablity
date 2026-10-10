@@ -1,5 +1,5 @@
 import pytest
-from backend.app.ingestion.multimodal import ocr_image, extract_tables, embed_image
+from app.ingestion.multimodal import ocr_image, extract_tables, embed_image
 
 def test_ocr_stub():
     assert ocr_image is not None
