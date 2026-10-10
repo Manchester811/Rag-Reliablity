@@ -29,7 +29,7 @@ def embed_image(pil_img):
             pil_img = Image.open(pil_img)
         # Convert image to bytes/feature for embedding (stub uses random for now with real path)
         # Actual: use CLIPEncoder(pil_img) → vector
-        emb = np.random.randn(384).astype(np.float32)  # MiniLM dim; replace with CLIP 512
+        emb = np.zeros(512, dtype=np.float32)  # MiniLM dim; replace with CLIP 512
         return emb.tolist()
     except Exception as e:
-        return [float('nan')] * 384
+        return [0.0] * 512
