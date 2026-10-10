@@ -24,6 +24,7 @@ if os.getenv("NGROK_URL"):
 if os.getenv("CORS_ORIGIN"):
     allowed_origins.append(os.getenv("CORS_ORIGIN"))
 app.add_middleware(CORSMiddleware,allow_origins=allowed_origins,allow_credentials=True,allow_methods=["*"],allow_headers=["*"])
+@app.get("/api/health")
 def health(): return {"status":"ok","service":"rag-reliability-lab","version":"1.0.0"}
 
 @app.get("/api/dashboard")

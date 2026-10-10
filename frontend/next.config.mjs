@@ -3,7 +3,7 @@ const nextConfig = {
     optimizeCss: false,
   },
   async rewrites() {
-    const backendUrl = process.env.BACKEND_URL || 'http://127.0.0.1:8000';
+    const backendUrl = process.env.BACKEND_URL || 'https://rag-reliablity-backend.vercel.app';
     return [
       {
         source: '/api/:path*',
