@@ -1,5 +1,5 @@
-import sqlite3
-from .config import DB_PATH
+﻿import sqlite3
+from .config import _resolve_db_path
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS experiments (
@@ -58,10 +58,20 @@ CREATE TABLE IF NOT EXISTS failures (
 );
 """
 
+
 def connect():
-    c = sqlite3.connect(DB_PATH)
+    db_path = _resolve_db_path()
+    try:
+        c = sqlite3.connect(db_path)
+    except sqlite3.OperationalError:
+        import tempfile
+        from pathlib import Path
+        fallback_dir = Path(tempfile.gettempdir()) / "rag_reliability_lab_data"
+        fallback_dir.mkdir(parents=True, exist_ok=True)
+        c = sqlite3.connect(fallback_dir / "rag_lab.db")
     c.row_factory = sqlite3.Row
     return c
+
 
 def init_db():
     with connect() as c:

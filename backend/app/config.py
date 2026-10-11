@@ -1,20 +1,25 @@
-import os
+﻿import os
 import tempfile
 from pathlib import Path
 
-# Use an environment variable to override the database location. This lets
-# deployments point at a writable path (e.g. /tmp on Vercel) instead of the
-# read-only repository filesystem.
-DB_PATH = os.getenv("DB_PATH")
-if not DB_PATH:
-    BASE_DIR = Path(__file__).resolve().parents[1]
-    DATA_DIR = BASE_DIR / "data"
+
+def _resolve_db_path():
+    """Resolve the database path lazily so environment variables and a
+    writable fallback are both honored at connection time."""
+    env_path = os.getenv("DB_PATH")
+    if env_path:
+        return Path(env_path)
+
+    base_dir = Path(__file__).resolve().parents[1]
+    data_dir = base_dir / "data"
     try:
-        DATA_DIR.mkdir(exist_ok=True)
-        DB_PATH = DATA_DIR / "rag_lab.db"
+        data_dir.mkdir(parents=True, exist_ok=True)
+        return data_dir / "rag_lab.db"
     except OSError:
-        # Fall back to a writable temp directory when the project directory is
-        # read-only (e.g. Vercel serverless deployments).
-        DATA_DIR = Path(tempfile.gettempdir()) / "rag_reliability_lab_data"
-        DATA_DIR.mkdir(exist_ok=True)
-        DB_PATH = DATA_DIR / "rag_lab.db"
+        # Project directory is read-only (e.g. Vercel serverless deployments).
+        fallback_dir = Path(tempfile.gettempdir()) / "rag_reliability_lab_data"
+        fallback_dir.mkdir(parents=True, exist_ok=True)
+        return fallback_dir / "rag_lab.db"
+
+
+DB_PATH = _resolve_db_path()
